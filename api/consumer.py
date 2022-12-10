@@ -46,6 +46,8 @@ class GetGMJIConsumer(AsyncWebsocketConsumer):
               datas3 = lst[2][i-(30*sampling):i]
               p = get_Parrival(datas1, datas2, datas3, sampling)
               if p != -1:
+                    if p != 749:
+                          p = 749
                     # print(p)
                     # print(i)
                     p += i - (30*sampling)
@@ -135,6 +137,8 @@ class GetJAGIConsumer(AsyncWebsocketConsumer):
               datas3 = lst[2][i-(30*sampling):i]
               p = get_Parrival(datas1, datas2, datas3, sampling)
               if p != -1:
+                    if p != 749:
+                        p = 749
                     # print(p)
                     # print(i)
                     p += i - (30*sampling)
@@ -226,6 +230,8 @@ class GetPWJIConsumer(AsyncWebsocketConsumer):
               datas3 = lst[2][i-(30*sampling):i]
               p = get_Parrival(datas1, datas2, datas3, sampling)
               if p != -1:
+                    if p != 749:
+                        p = 749
                     # print(p)
                     # print(i)
                     p += i - (30*sampling)
